@@ -1,5 +1,7 @@
 provider "aws" {
-  region = "eu-north-1"
+AWS_Access_Key_ID: "AKIA3FLD3AQ4TLAYVKN3"
+AWS_Secret_Access_Key: "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"
+region = "eu-north-1"
 }
 resource "aws_instance" "name" {
   ami                    = "ami-04cdc91e49cb06165"
