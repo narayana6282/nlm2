@@ -178,11 +178,11 @@ CKEDITOR_CONFIGS = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME':  'lms23',
-        'HOST':'127.0.0.1',
+        'NAME':  'lmsdb',
+        'HOST':'dbinside.ctcyqqe4uikl.eu-north-1.rds.amazonaws.com',
         'PORT':'3306',
-        'USER':"root@localhost",
-        "PASSWORD":"",
+        'USER':"admin",
+        "PASSWORD":"Admin@1234",
         'OPTIONS': {
                      "init_command": "SET foreign_key_checks = 0;",
                      
