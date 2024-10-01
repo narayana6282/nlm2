@@ -4,7 +4,7 @@ provider "aws" {
 resource "aws_instance" "name" {
   ami                    = "ami-04cdc91e49cb06165"
   instance_type          = "t3.micro"
-  key_name               = "ssr"
+  key_name               = "j-e-n"
   vpc_security_group_ids = ["sg-0e708e3572bc9739d"]
   tags = {
     name = "lms"
@@ -32,7 +32,7 @@ resource "aws_instance" "name" {
     connection {
       type        = "ssh"
       user        = "ubuntu"
-      private_key = file("ssr.pem")
+      private_key = file("j-e-n.pem")
       host        = self.public_ip
     }
 
