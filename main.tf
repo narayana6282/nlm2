@@ -4,7 +4,7 @@ secret_key = "PhHUA3mnAb2aWUT6gs8MCtkit26mJwMMg+KuBYDd"
 region     = "us-west-2"
 }
 resource "aws_instance" "name" {
-  ami                    = "ami-04cdc91e49cb06165"
+  ami                    = "ami-02b7539372433cf6b"
   instance_type          = "t3.micro"
   key_name               = "j-e-n"
   vpc_security_group_ids = ["sg-0e708e3572bc9739d"]
