@@ -1,13 +1,13 @@
 provider "aws" {
-access_key = "AKIA3FLD3AQ4TLAYVKN3"
-secret_key = "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"
-region     = "eu-north-1"
+access_key = "AKIAWCYYAFTOXQR5GJAQ"
+secret_key = "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"
+region     = "ap-south-1"
 }
 resource "aws_instance" "name" {
-  ami                    = "ami-04cdc91e49cb06165"
+  ami                    = "ami-0dee22c13ea7a9a67"
   instance_type          = "t3.micro"
-  key_name               = "j-e-n"
-  vpc_security_group_ids = ["sg-0e708e3572bc9739d"]
+  key_name               = "lms"
+  vpc_security_group_ids = ["sg-0c4859c8c0e61b2d1"]
   tags = {
     name = "lms"
   }
@@ -34,7 +34,7 @@ resource "aws_instance" "name" {
     connection {
       type        = "ssh"
       user        = "ubuntu"
-      private_key = file("j-e-n.pem")
+      private_key = file("lms.pem")
       host        = self.public_ip
     }
 
