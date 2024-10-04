@@ -179,10 +179,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME':  'lmsdb',
-        'HOST':'dbinside.ctcyqqe4uikl.eu-north-1.rds.amazonaws.com',
+        'HOST':'dbinside.chse0qya6glk.ap-south-1.rds.amazonaws.com',
         'PORT':'3306',
         'USER':"admin",
-        "PASSWORD":"Admin@1234",
+        "PASSWORD":"Admin1234",
         'OPTIONS': {
                      "init_command": "SET foreign_key_checks = 0;",
                      
